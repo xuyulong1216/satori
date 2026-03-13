@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "html5parser": "^2.0.2",
-    "image-size": "^2.0.1"
+    "image-size": "^2.0.1",
+    "@matrix-org/matrix-sdk-crypto-nodejs": "^0.4.0"    
   }
 }
