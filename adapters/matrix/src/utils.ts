@@ -61,6 +61,9 @@ export async function adaptMessage(
 
 export async function adaptSession(bot: MatrixBot, event: Matrix.ClientEvent): Promise<Session> {
   const session = bot.session()
+  if (event.type === 'm.room.encrypted') {
+
+  }
   if (event.type === 'm.room.message') {
     const content = event.content as Matrix.M_ROOM_MESSAGE
     const newContent = content['m.new_content']
