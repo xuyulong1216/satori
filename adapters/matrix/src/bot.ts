@@ -3,6 +3,7 @@ import { HttpAdapter } from './http'
 import { MatrixMessageEncoder } from './message'
 import * as Matrix from './types'
 import { adaptMessage, decodeUser, dispatchSession } from './utils'
+import { OlmMachine } from '@matrix-org/matrix-sdk-crypto-nodejs'
 
 export class MatrixBot<C extends Context = Context> extends Bot<C, MatrixBot.Config> {
   static MessageEncoder = MatrixMessageEncoder
